@@ -1,5 +1,5 @@
 # 30 Days of Python
-`Este reposítorio é referente ao curso: ` [30 Days of Python](https://teclado.com/30-days-of-python/)<br>
+`Este reposítorio é referente ao curso:` [30 Days of Python](https://teclado.com/30-days-of-python/) <br>
 Objetivo é aprender o básico de python enquanto treino o meu inglês
 
 <div align="center">
@@ -10,10 +10,14 @@ Objetivo é aprender o básico de python enquanto treino o meu inglês
 
 # Status do projeto
 🚧Em andamento 🚧
-- [Dia 1](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia1)
-- [Dia 2](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia2)
-- [Dia 3](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia3)
-    - [Projeto Dia 3](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia3/projeto)
+- Aula : [Dia 1: Numeros, operadores aritimeticos, exibir no terminal](https://teclado.com/30-days-of-python/python-30-day-1-numbers-printing/)
+  - Exercícios : [Dia 1](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia1)
+-  Aula : [Dia 2: Strings, variaveis, recebendo input do usuário](https://teclado.com/30-days-of-python/python-30-day-2-strings-variables/)
+  - Exercícios : [Dia 2](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia2)
+-  Aula : [Dia 3: Formatando strings, processando o input do usuário](https://teclado.com/30-days-of-python/python-30-day-3-string-formatting/)
+  - Exercícios : [Dia 3](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia3)
+-  Aula : [Projeto Dia 3: Um simples calculador de ganhos semanais de um funcionário](https://teclado.com/30-days-of-python/python-30-day-3-project/)
+  - Exercícios : [Projeto Dia 3](https://github.com/thiagosilvaantenor/30DaysOfPython/tree/main/dia3/projeto)
  
 # Tecnologias
 -  [Python 3](https://www.python.org/downloads/release/python-3110/)

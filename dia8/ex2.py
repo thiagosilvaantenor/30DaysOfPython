@@ -4,5 +4,6 @@
 
 for keyword in 'Python':
   if 'o' in keyword:
+    # Se a letra for = a 'o', pula essa iteracao
     continue
   print(keyword);

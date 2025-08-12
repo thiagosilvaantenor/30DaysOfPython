@@ -15,12 +15,12 @@ lista.reverse()
 # For this sequence of reversed digits, 
 # take the digits at each of the even indices (0, 2, 4, 6, etc.) and double them.
 # If any of the results are greater than 9, subtract 9 from those numbers.
-for i in lista:
+for counter, item in enumerate(lista):
     # Verify if index is even
-    index = lista.index(i)
+    index = counter
     if ((index % 2) == 0):
         # if is then double the value
-        double_i = pow(int(i),2)
+        double_i = int(item)*2
         if (double_i > 9):
             double_i = double_i - 9
         lista[index] = str(double_i)

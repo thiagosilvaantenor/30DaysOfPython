@@ -1,4 +1,4 @@
-# /bin/python3
+#!/bin/python3
 # Recevies a Credit Card number from user to validate with the Lumn algorithm
 
 original_number = input('Type the credit card number you want to test it ')

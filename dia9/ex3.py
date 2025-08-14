@@ -1,4 +1,4 @@
-#/bin/python3
+#!/bin/python3
 #3) Investigate what happens when you try to zip two iterables of different lengths. 
 # For example, try to zip a list containing three items, and a tuples containing four items.
 

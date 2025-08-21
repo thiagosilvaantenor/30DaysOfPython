@@ -12,7 +12,7 @@ def menu():
     option = '4'
     while '3' not in option:
         print("Enter the option:\n")
-        option = input('1- Add book\n2- Show books\n3-quit : ')
+        option = input('1- Add book\n2- Show books\n3- Search a book in the file\n4- Quit : ')
         match option:
             case '1':
                 # reads the input
@@ -25,6 +25,8 @@ def menu():
             case '2':
                 read_books(file_path="/home/thiago/Downloads/codes/python_estudos/30DaysOfPython/dia14/assets/books.csv")
             case '3':
+                find_book(name=input('Enter the name of the book: '))
+            case '4':
                 print('Closing the program....')
 
 
@@ -64,6 +66,23 @@ def read_books(file_path:str):
             h_name, h_autor, h_year = headers
             i_name, i_autor, i_year = i.split(',')
             print(f'{h_name.capitalize()}: {i_name} - {h_autor.capitalize()}: {i_autor} - {h_year.capitalize()}: {i_year} ')
+
+
+def find_book(name:str):
+    with open("/home/thiago/Downloads/codes/python_estudos/30DaysOfPython/dia14/assets/books.csv", mode="r") as f:
+        end = False
+        # Reads the header first
+        line = f.readline()
+        # Search the name in the book
+        while end != True:
+            # If find it print the book and quit the loop
+            if name.lower() in line.lower():
+                book = line.split(',')
+                print(', '.join(book))
+                end = True
+            # If not, then go to the next line
+            line = f.readline()
+        
 
 menu()
 

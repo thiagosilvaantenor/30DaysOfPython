@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # 1) Use the sort method to put the following list in alphabetical order with regards to the students' names:
 students = [
     {"name": "Hannah", "grade_average": 83},

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # lambda expressions: single expressions functions, cannot use if
 # lambda a,b : a + b
 

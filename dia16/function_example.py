@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # using functions in variables
 # def add(a, b):
 #     print(a + b)

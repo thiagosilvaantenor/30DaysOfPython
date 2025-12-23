@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Copilot é clanker
 # spliting code, importing files and using functions from other files
 # everything that works with modules works with imported files
 

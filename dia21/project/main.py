@@ -1,17 +1,41 @@
-#!/usr/bin/env python3
-# Plotting graphs using matplotlib:
-# 
-#     Create a scatter plot where the x axis is the species and the y axis is one of the other columns.
-#     Via a user menu, tell us the column they would like to plot in the y axis.
-#     Also via the menu, tell us the name of the file they would like to create to contain the final plot image.
-# to use the import bellow you need to install matplotlib
-# pip install matplotlib
-from matplotlib import pyplot as plt
+# Menu
 
-menu = input("""Hello!, please select the a option:
+from graphing import plot_graph
 
-- 1. Plot a graph.
-- 2. Exit.\n""")
+USER_CHOICE = """
+Enter:
+- '1' to select a column to be in the y axis
+- 'q' to quit
 
-plot_menu = "Enter the column you want to plot: "
+Your choice: """
+
+COLUMNS = {
+    "1":"sepal_length",
+    "2":"sepal_width",
+    "3":"petal_length",
+    "4":"petal_width",
+}
+    
+
+def menu():
+    op = ''
+    while op != 'q':
+        op = input(USER_CHOICE)
+        if op == '1':
+                y = get_column()
+                name_file = input('Enter the name of the file, without the type: ')
+                plot_graph(y,name_file.strip())
+        elif op == 'q':
+                break
+        else:
+            continue
+
+def get_column():
+    options = []
+    for i,j in COLUMNS.items():
+        options.append(f'{i.strip()} - {j.strip()}')
+    column = input(options)
+    return COLUMNS.get(column)
+
+menu()
 

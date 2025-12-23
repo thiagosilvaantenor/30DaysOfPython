@@ -24,3 +24,16 @@ def delete_book(name):
     books = get_all_books()
     books = [book for book in books if book['name'] != name]
     save_all_books(books)
+
+def prompt_read_book():
+    name = input('Enter the name of the book you just finished reading: ')
+    #Transform the name to title case
+    mark_book_as_read(name.title())
+
+
+def mark_book_as_read(name):
+    books = get_all_books()
+    for book in books:
+        if book['name'] == name:
+            book['read'] = '1'
+    save_all_books(books)

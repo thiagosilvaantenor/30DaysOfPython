@@ -1,7 +1,6 @@
 #/usr/bin/env python3
 # Menu for the book management application
 import book.operations as book_ops
-import book.info_book as info_book
 import file.file as file_ops
 
 USER_CHOICE = """
@@ -24,7 +23,7 @@ def menu():
         elif user_input == 'l':
             book_ops.list_books()
         elif user_input == 'r':
-            info_book.prompt_read_book()
+            file_ops.prompt_read_book()
         elif user_input == 'd':
             book_ops.prompt_delete_book()
 

@@ -16,24 +16,20 @@ import itertools
 
 def employee_scheduler(employees:list, limit:int):
     # D1=Sunday, D2=Monday, ..., D7=Saturday
-    day_dict = {1:'Sunday', 2: "Monday", 3:"Tuesday", 4:"Wednesday", 5: "Thursday", 6: "Friday", 7:"Saturday"}
-    day_week = 1
-    day_month = 1
+    days_week = itertools.cycle(("Sunday", "Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"))
+    schedule_list = itertools.cycle(employees)
     output = ''
 
-    list_buffer = itertools.cycle(employees)
-    for employee in list_buffer:
+    for day_number in range(1,31):
         
-        output = f'On the {day_dict.get(day_week)}, {day_month} of the month -\nThe employee: {employee} will close the shop'
+        output = f'On the {next(days_week)}, {day_number}th of the month\nThe employee: {next(schedule_list)} will close the shop'
 
-        if day_month == limit:
+        if day_number == limit:
             return output
-        day_week+= 1
-        day_month+= 1
         
 
             
-print(employee_scheduler(['A','B','C'], 5))
+print(employee_scheduler(['A','B','C'], 30))
 
 
 
